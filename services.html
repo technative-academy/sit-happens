@@ -20,7 +20,7 @@
         </div>
         <img
           class="image__dog"
-          src="/public/dog.png"
+          src="public/dog.png"
           alt="Sit Happens dog mascot"
         />
       </div>
@@ -30,40 +30,199 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
+      <h1>Services</h1>
     </header>
 
     <main>
       <!-- HERO SECTION: TITLE -->
-      <section>
-        <!-- SERVICES TITLE -->
-        <!-- SHORT DESCRIPTION -->
-      </section>
+      <section class="services">
+        <h2 class="services__title">We offer the following services</h2>
 
-      <!-- SERVICES LIST -->
-      <section>
-        <!-- SERVICE ITEM 1: DOG WALKING -->
-        <!-- SERVICE ITEM 2: PET SITTING -->
-        <!-- SERVICE ITEM 3: DROP-IN VISITS -->
+        <div class="services__grid">
+          <article class="service-card">
+            <h3 class="service-card__title">Dog Sitting</h3>
+            <p class="service-card__description">
+              Your dog is cared for in a calm, safe, and loving environment
+              where their routine comes first. Whether it’s a day, overnight, or
+              longer stay, I provide attentive, home-style care with plenty of
+              walks, play, and affection—so your dog feels relaxed and secure
+              while you’re away.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Dog & House Sitting</h3>
+            <p class="service-card__description">
+              Enjoy peace of mind knowing your home and dog are both well looked
+              after while you’re away. I stay in your home to maintain your
+              dog’s normal routine, keep your property secure, and ensure
+              everything runs smoothly—so you return to a happy dog and a
+              well-cared-for home.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Dog Walking</h3>
+            <p class="service-card__description">
+              Regular, stimulating walks tailored to your dog’s energy level and
+              needs. Whether it’s a steady stroll or an active adventure, walks
+              provide exercise, mental stimulation, and socialisation, helping
+              your dog stay healthy, happy, and well-balanced.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Dog Grooming</h3>
+            <p class="service-card__description">
+              Gentle grooming services help keep your dog clean, comfortable,
+              and looking their best. From brushing and bathing to basic coat
+              and paw care, each session is handled patiently and calmly, making
+              grooming a positive experience—especially for nervous or sensitive
+              dogs.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Dog Friendly Holidays</h3>
+            <p class="service-card__description">
+              Give your dog a holiday of their own while you’re away. Dog
+              holidays offer a relaxed, enrichment-focused experience with lots
+              of outdoor time, exercise, and social interaction, creating a fun
+              and stress-free stay that feels more like a break than boarding.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Dog Training</h3>
+            <p class="service-card__description">
+              Training is tailored to your dog’s personality and your goals,
+              focusing on positive, reward-based methods that build trust and
+              confidence. From basic obedience to improving behaviour at home or
+              on walks, sessions are practical, supportive, and designed to
+              create lasting results you can continue every day.
+            </p>
+          </article>
+        </div>
       </section>
 
       <!-- PRICING INFORMATION (OPTIONAL) -->
       <section>
-        <!-- RATES TABLE OR LIST -->
-      </section>
+        <section class="pricing">
+          <h2 class="pricing__title">Dog Services Pricing</h2>
 
-      <!-- CONTACT / BOOKING FORM -->
-      <section>
-        <!-- SHORT BOOKING FORM OR LINK -->
+          <table class="pricing-table">
+            <thead class="pricing-table__head">
+              <tr class="pricing-table__row">
+                <th class="pricing-table__header">Service</th>
+                <th class="pricing-table__header">Duration</th>
+                <th class="pricing-table__header">Price</th>
+              </tr>
+            </thead>
+
+            <tbody class="pricing-table__body">
+              <tr class="pricing-table__row">
+                <td class="pricing-table__cell">Dog Sitting</td>
+                <td class="pricing-table__cell">Per Hour</td>
+                <td class="pricing-table__cell">£10 – £30</td>
+              </tr>
+
+              <tr class="pricing-table__row">
+                <td class="pricing-table__cell">Dog Walking</td>
+                <td class="pricing-table__cell">30- 60 mins</td>
+                <td class="pricing-table__cell">£15 – £30</td>
+              </tr>
+
+              <tr class="pricing-table__row">
+                <td class="pricing-table__cell">Dog Grooming</td>
+                <td class="pricing-table__cell">Full groom</td>
+                <td class="pricing-table__cell">£40 – £95</td>
+              </tr>
+
+              <tr class="pricing-table__row">
+                <td class="pricing-table__cell">Dog Training</td>
+                <td class="pricing-table__cell">Per hour</td>
+                <td class="pricing-table__cell">£10 – £30</td>
+              </tr>
+
+              <tr class="pricing-table__row">
+                <td class="pricing-table__cell">Dog Boarding</td>
+                <td class="pricing-table__cell">Overnight</td>
+                <td class="pricing-table__cell">£25 – £35</td>
+              </tr>
+
+              <tr class="pricing-table__row">
+                <td class="pricing-table__cell">House and Dog Sitting</td>
+                <td class="pricing-table__cell">Overnight</td>
+                <td class="pricing-table__cell">£25 – £35</td>
+              </tr>
+
+              <tr class="pricing-table__row">
+                <td class="pricing-table__cell">Dog Friendly Holidays</td>
+                <td class="pricing-table__cell">2-7 Nights</td>
+                <td class="pricing-table__cell">Contact us for a quote</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
     </main>
 
     <!-- FOOTER SECTION -->
-    <footer>
-      <!-- SOCIAL LINKS -->
-      <!-- LEGAL LINKS -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <!-- Top main section -->
+        <div class="footer__links">
+          <!-- Company info column -->
+          <div class="footer__column footer__column--company">
+            <h3 class="footer__heading">Company</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Services</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Dog Gallery</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Legal info column -->
+          <div class="footer__column footer__column--legal">
+            <h3 class="footer__heading">Legal</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Cookies Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="footer__divider" />
+
+        <!-- Bottom section -->
+        <div class="footer__bottom">
+          <p class="footer__copyright">© 2024 All rights reserved</p>
+
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Instagram"></a>
+            <a href="#" class="footer__social" aria-label="Dribbble"></a>
+            <a href="#" class="footer__social" aria-label="Twitter"></a>
+            <a href="#" class="footer__social" aria-label="YouTube"></a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
