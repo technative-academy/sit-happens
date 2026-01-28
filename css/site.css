@@ -1,0 +1,8 @@
+@import 'variables.css';
+@import '.globals.css';
+
+@import './components/button.css';
+@import './components/search.css';
+@import './components/card.css';
+@import './components/sort.css';
+@import './components/header.css';
