@@ -3,17 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/site.css" />
     <title>Sit Happens - Services</title>
   </head>
   <body>
     <!-- HEADER SECTION -->
-    <header>
+    <header class="site-header">
       <!-- LOGO -->
-      <div class="logo">
-        <h2>Sit Happens</h2>
+      <div class="site-header__brand">
+        <div class="text" aria-label="Sit Happens">
+          <span class="text__sit">Sit</span>
+          <span class="text__happens"
+            >Happens<span class="text__dot">.</span></span
+          >
+        </div>
+        <img
+          class="text__dog"
+          src="/public/dog.png"
+          alt="Sit Happens dog mascot"
+        />
       </div>
       <!-- NAVIGATION LINKS -->
-      <nav>
+      <nav class="site-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
