@@ -1,6 +1,10 @@
+/* ==============================
+   FOOTER BASE
+================================ */
+
 .footer {
   background-color: var(--color-primary); /* orange */
-  color: white;
+  color: #fff;
   font-family: var(--font-base);
   overflow: hidden;
   padding-bottom: 2rem;
@@ -12,7 +16,9 @@
   padding: 2rem clamp(1.5rem, 5vw, 3rem);
 }
 
-/* --- TOP SECTION --- */
+/* ==============================
+   TOP SECTION
+================================ */
 
 .footer__links {
   display: flex;
@@ -28,6 +34,7 @@
 .footer__heading {
   margin-bottom: 0.75rem;
   font-size: 1rem;
+  color: var(--color-white);
 }
 
 .footer__list {
@@ -41,7 +48,7 @@
 }
 
 .footer__link {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -50,19 +57,21 @@
   text-decoration: underline;
 }
 
-/* --- BOTTOM SECTION --- */
+/* ==============================
+   BOTTOM SECTION
+================================ */
 
 .footer__bottom {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary-dark); /*dark grey*/
   padding: 2rem clamp(1.5rem, 5vw, 3rem);
-  margin: 0 -1rem -2rem;
+  margin: 2rem -1rem -2rem;
+  border-top: 2px solid var(--color-text);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  border-top: 2px solid var(--color-text-light);
-  margin-top: 2rem;
 }
 
 .footer__copyright {
@@ -70,7 +79,9 @@
   font-size: 0.85rem;
 }
 
-/* --- SOCIAL LINKS --- */
+/* ==============================
+   SOCIAL ICONS
+================================ */
 
 .footer__socials {
   display: flex;
@@ -78,9 +89,31 @@
 }
 
 .footer__social {
-  width: 24px;
-  height: 24px;
-  background-color: white;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  display: inline-block;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-text);
+  transition: background-color 0.2s ease;
+}
+
+.footer__social svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  fill: currentColor;
+  transition: color 0.2s ease;
+}
+
+/* Hover state */
+.footer__social:hover {
+  background-color: #fff;
+}
+
+.footer__social:hover svg {
+  color: var(--color-primary);
 }

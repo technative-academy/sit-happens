@@ -1,17 +1,20 @@
 .card {
   background-color: var(--color-white);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border: 3px solid var(--color-grey-light);
+  /*border: 3px solid var(--color-grey-light);*/
+  color: var(--color-text);
 }
 
 .card__image {
   width: 100%;
   height: 220px;
   object-fit: cover;
+  /*border-radius: var(--radius-lg); */
+  /*curved bottom*/
 }
 
 .card__info {
@@ -19,9 +22,12 @@
 }
 
 .card__title {
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 0.5rem;
   margin: 0 0 0.5rem;
   font-size: 1rem;
   font-weight: 600;
+  color: var(--color-heading);
 }
 
 .card__description {

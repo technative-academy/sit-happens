@@ -1,11 +1,11 @@
-@import './globals.css';
-@import './variables.css';
+@import "variables.css";
+@import "globals.css";
 
 /* components */
-@import './components/button.css';
-@import './components/card.css';
-@import './components/header.css';
-@import './components/footer.css';
+@import "./components/button.css";
+@import "./components/card.css";
+@import "./components/header.css";
+@import "./components/footer.css";
 
 /* home */
 @import './components/home/home-hero.css';
@@ -13,3 +13,9 @@
 @import './components/home/testimonials.css';
 @import './components/home/home-tabs.css';
 @import './components/home/home-cta.css';
+
+/* services */
+@import "./components/services.css";
+
+/* gallery */
+@import "./components/gallery.css";
