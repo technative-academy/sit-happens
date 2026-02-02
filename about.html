@@ -3,66 +3,203 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="./css/site.css" />
-    <title>Sit Happens - About</title>
+
+    <!-- Scripts -->
+    <script src="./about.js" defer></script>
+
+    <title>Sit Happens</title>
   </head>
+
   <body>
-    <!-- HEADER SECTION -->
+    <!-- ================= HEADER ================= -->
     <header class="site-header">
-      <!-- LOGO -->
       <div class="site-header__brand">
         <div class="text" aria-label="Sit Happens">
           <span class="text__sit">Sit</span>
-          <span class="text__happens"
-            >Happens<span class="text__dot">.</span></span
-          >
+          <span class="text__happens">
+            Happens<span class="text__dot">.</span>
+          </span>
         </div>
+
         <img
-          class="text__dog"
-          src="/public/dog.png"
-          alt="Sit Happens dog mascot"
+          class="image__dog"
+          src="./public/dog.png"
+          alt="Sit Happens dog logo"
         />
       </div>
-      <!-- NAVIGATION LINKS -->
-      <nav class="site-nav">
+
+      <nav class="site-nav" aria-label="Primary navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- ================= MAIN ================= -->
     <main>
-      <!-- HERO SECTION: TITLE -->
-      <section>
-        <!-- ABOUT US TITLE -->
-        <!-- TAGLINE -->
+      <!-- About -->
+      <section class="about">
+        <h2>About Us</h2>
+        <p>
+          We are a Brighton-based dogsitting and walking service. We offer a
+          variety of walks covering a variety of walks by the seaside, woodland
+          and local parks. We know socialisation and exercise are important to
+          your dog so we provide varied walks to keep your dog active, happy and
+          healthy. We pride ourselves on our reliability, genuine care for your
+          four-legged friends and our full range of dog walking services. These
+          dog services include our 1 hr walks, weekend walks (for pet sittings),
+          pet friendly taxi services, taxi service for vet appointments, pet
+          feeding and our famous Friday Mega Hike. We promise to bring your pet
+          home safe, tired and above all happy in our pet friendly vehicles. Get
+          in touch now to see how our dog walking company can meet your animal
+          needs.
+        </p>
       </section>
 
-      <!-- COMPANY STORY / MISSION -->
-      <section>
-        <!-- WHO WE ARE TEXT -->
-        <!-- IMAGE OF FOUNDER/TEAM -->
+      <!-- Who We Are -->
+      <section class="about">
+        <h2>Who We Are</h2>
+        <p>
+          Sit Happens was formed in January 2026 by three software developers,
+          Emma, Alex and Kristy for the Digital Technative Bootcamp. Their love
+          of dogs inpired them to produce a website for a dog walking and
+          sitting service. Our full range of services include dog walking, dog
+          and house sitting, dog grooming, dog-friendly holidays, dog spa and
+          dog training. Every member of out team is fully insured and trained in
+          the service they provide. Please give us a call or get in touch
+          through the "Contact Us" box below and we will get back to you.
+        </p>
       </section>
 
-      <!-- TEAM MEMBERS GRID -->
-      <section>
-        <!-- MEMBER 1 -->
-        <!-- MEMBER 2 -->
+      <!-- Image -->
+      <section class="card">
+        <img
+          src="./images/dog-walking-photo.jpg"
+          alt="Dogs on a walk"
+          class="card__image"
+        />
       </section>
 
-      <!-- CALL TO ACTION -->
-      <section>
-        <!-- CONTACT LINK -->
+      <!-- Map -->
+      <section class="card card--white">
+        <h2 class="card__title">Map</h2>
+        <p class="card__text">
+          This is the area we cover. Please contact us to confirm availability
+          in your area.
+        </p>
+
+        <iframe
+          title="Google Map of Brighton"
+          src="https://maps.google.com/maps?q=Brighton,UK&z=14&output=embed"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <!-- Call to action -->
+      <section class="contact">
+        <p>
+          Please contact us using the form below to get prices for the service
+          you require.
+        </p>
+        <p><strong>Telephone:</strong> 01273 370284</p>
+      </section>
+
+      <!-- Contact form -->
+      <section class="contact">
+        <div class="contact-box">
+          <h2>Contact Us</h2>
+
+          <form id="contactForm">
+            <label>
+              Name
+              <input type="text" id="name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" id="email" required />
+            </label>
+
+            <label>
+              Message
+              <textarea id="message" required></textarea>
+            </label>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </section>
     </main>
 
-    <!-- FOOTER SECTION -->
-    <footer>
-      <!-- SOCIAL LINKS -->
-      <!-- LEGAL LINKS -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <!-- Top section -->
+        <div class="footer__links">
+          <div class="footer__column footer__column--company">
+            <h3 class="footer__heading">Company</h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">About Us</a></li>
+              <li><a href="#" class="footer__link">Services</a></li>
+              <li><a href="#" class="footer__link">Dog Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column footer__column--legal">
+            <h3 class="footer__heading">Legal</h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Cookies Policy</a></li>
+              <li><a href="#" class="footer__link">Privacy Policy</a></li>
+              <li><a href="#" class="footer__link">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom section -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 All rights reserved</p>
+
+        <div class="footer__socials">
+          <a href="#" class="footer__social" aria-label="Instagram">
+            <svg aria-hidden="true">
+              <use href="./public/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="footer__social" aria-label="Dribbble">
+            <svg aria-hidden="true">
+              <use href="./public/icons.svg#icon-dribbble"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="footer__social" aria-label="X (Twitter)">
+            <svg aria-hidden="true">
+              <use href="./public/icons.svg#icon-x"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="footer__social" aria-label="YouTube">
+            <svg aria-hidden="true">
+              <use href="./public/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
