@@ -9,8 +9,11 @@
   --color-white: #ffffff;
   --color-grey-light: #e2e8f0;
 
-  --font-base: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-bold: 700;
+
+  --font-base: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-bold: 700; 
 
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;

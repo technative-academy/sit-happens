@@ -17,29 +17,39 @@
 
     <!-- Scripts -->
     <script src="./about.js" defer></script>
+    <script src="./home.js" defer></script>
 
     <title>Sit Happens</title>
   </head>
 
   <body>
-    <!-- ================= HEADER ================= -->
+    <!-- HEADER SECTION -->
     <header class="site-header">
+      <!-- LOGO -->
+
       <div class="site-header__brand">
         <div class="text" aria-label="Sit Happens">
           <span class="text__sit">Sit</span>
-          <span class="text__happens">
-            Happens<span class="text__dot">.</span>
-          </span>
+          <span class="text__happens"
+            >Happens<span class="text__dot">.</span></span
+          >
         </div>
-
         <img
           class="image__dog"
           src="/public/dog.png"
-          alt="Sit Happens dog mascot"
+          alt="Sit Happens dog logo"
         />
       </div>
 
-      <nav class="site-nav" aria-label="Primary navigation">
+      <!-- HAMBURGER MENU BUTTON -->
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+      <!-- NAVIGATION LINKS -->
+      <nav class="site-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>

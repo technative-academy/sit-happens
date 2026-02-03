@@ -16,6 +16,7 @@
 .home-cta__title {
   margin: 0;
   text-align: center;
+  color: var(--color-heading);
 }
 
 .home-cta__text {

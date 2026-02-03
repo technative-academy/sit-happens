@@ -31,6 +31,14 @@
           alt="Sit Happens dog logo"
         />
       </div>
+
+      <!-- HAMBURGER MENU BUTTON -->
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
       <!-- NAVIGATION LINKS -->
       <nav class="site-nav">
         <ul>
@@ -268,12 +276,11 @@
       </section>
     </main>
 
-    <!-- FOOTER SECTION -->
+    <!-- ================= FOOTER ================= -->
     <footer class="footer">
       <div class="footer__inner">
-        <!-- Top main section -->
+        <!-- Top section -->
         <div class="footer__links">
-          <!-- Company info column -->
           <div class="footer__column footer__column--company">
             <h3 class="footer__heading">Company</h3>
             <ul class="footer__list">
@@ -289,7 +296,6 @@
             </ul>
           </div>
 
-          <!-- Legal info column -->
           <div class="footer__column footer__column--legal">
             <h3 class="footer__heading">Legal</h3>
             <ul class="footer__list">
@@ -312,10 +318,29 @@
         <p class="footer__copyright">© 2024 All rights reserved</p>
 
         <div class="footer__socials">
-          <a href="#" class="footer__social" aria-label="Instagram"></a>
-          <a href="#" class="footer__social" aria-label="Dribbble"></a>
-          <a href="#" class="footer__social" aria-label="Twitter"></a>
-          <a href="#" class="footer__social" aria-label="YouTube"></a>
+          <a href="#" class="footer__social" aria-label="Instagram">
+            <svg aria-hidden="true">
+              <use href="public/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="footer__social" aria-label="Dribbble">
+            <svg aria-hidden="true">
+              <use href="public/icons.svg#icon-dribbble"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="footer__social" aria-label="X (Twitter)">
+            <svg aria-hidden="true">
+              <use href="public/icons.svg#icon-x"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="footer__social" aria-label="YouTube">
+            <svg aria-hidden="true">
+              <use href="public/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

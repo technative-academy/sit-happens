@@ -73,7 +73,7 @@
 
 .home-tabs__title {
   font-weight: var(--font-weight-semibold);
-  color: var(--color-text);
+  color: var(--color-heading);
 }
 
 .home-tabs__text {
@@ -81,7 +81,6 @@
   opacity: 0.75;
   line-height: 1.6;
 }
-
 
 .home-tabs__item.is-active {
   background: rgba(255, 255, 255, 0.6);
@@ -93,7 +92,6 @@
   outline-offset: 3px;
   border-radius: 0.75rem;
 }
-
 
 @media (min-width: 900px) {
   .home-tabs__inner {
