@@ -55,3 +55,26 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.classList.add('is-active');
   });
 });
+
+// hamburger menu
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.site-nav');
+
+  if (!hamburger || !nav) return;
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('is-open');
+    hamburger.classList.toggle('is-active');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+
+  // Close menu
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      hamburger.classList.remove('is-active');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+});

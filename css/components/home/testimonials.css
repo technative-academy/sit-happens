@@ -1,6 +1,7 @@
 .testimonials__title {
   text-align: center;
   margin: 0 0 var(--spacing-md);
+  color: var(--color-heading);
 }
 
 .testimonials__quote {
@@ -38,12 +39,11 @@
   position: absolute;
   left: 50%;
   bottom: 0.25rem;
-  width: 90px; 
+  width: 90px;
   height: 4px;
   background: var(--color-primary);
   transform: translateX(-50%);
   border-radius: 999px;
-
 
   transition:
     left 320ms cubic-bezier(0.2, 0.8, 0.2, 1),
