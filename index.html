@@ -3,57 +3,346 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/site.css" />
+    <script src="./home.js"></script>
     <title>Sit Happens</title>
   </head>
   <body>
     <!-- HEADER SECTION -->
-    <header>
+    <header class="site-header">
       <!-- LOGO -->
-      <div class="logo">
-        <h2>Sit Happens</h2>
+
+      <div class="site-header__brand">
+        <div class="text" aria-label="Sit Happens">
+          <span class="text__sit">Sit</span>
+          <span class="text__happens"
+            >Happens<span class="text__dot">.</span></span
+          >
+        </div>
+        <img
+          class="image__dog"
+          src="/public/dog.png"
+          alt="Sit Happens dog logo"
+        />
       </div>
+
+      <!-- HAMBURGER MENU BUTTON -->
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
       <!-- NAVIGATION LINKS -->
-      <nav>
+      <nav class="site-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <!-- HERO SECTION: IMAGE AND TITLE -->
-      <section>
-        <!-- BIG HERO IMAGE -->
-        <!-- PRIMARY CALL TO ACTION -->
+
+      <section class="home-hero">
+        <div class="container home-hero__inner">
+          <div class="home-hero__text">
+            <h1 class="home-hero__title">
+              Dog sitting and walking in Brighton & Hove
+            </h1>
+            <p class="home-hero__tagline">
+              Reliable care for your dog when you can't be there
+            </p>
+          </div>
+
+          <div class="home-hero__media" aria-label="Happy dog photo">
+            <img
+              class="home-hero__image"
+              src="public/dogs/dog2.webp"
+              alt="Sit Happens dog"
+            />
+          </div>
+
+          <div class="home-hero__trusted">
+            <p class="home-hero__trusted-label">TRUSTED BY DOG PEOPLE AROUND</p>
+            <ul class="home-hero__trusted-logos" aria-label="Trusted by">
+              <li class="home-hero__trusted-logo">Brighton</li>
+              <li class="home-hero__trusted-logo">Hove</li>
+              <li class="home-hero__trusted-logo">Preston Park</li>
+              <li class="home-hero__trusted-logo">Kemptown</li>
+              <li class="home-hero__trusted-logo">Portslade</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <!-- ABOUT SECTION: BRIEF INTRO -->
-      <section>
-        <!-- ABOUT TEXT -->
-        <!-- ABOUT IMAGE -->
+      <!-- IMAGE + TABS SECTION -->
+      <section class="section home-tabs">
+        <div class="container home-tabs__inner">
+          <figure class="home-tabs__media">
+            <div class="home-tabs__image-frame">
+              <img
+                class="home-tabs__image"
+                src="public/dogs/dog5.webp"
+                alt="Happy dog being looked after"
+              />
+            </div>
+          </figure>
+
+          <div
+            class="home-tabs__tabs"
+            data-home-tabs
+            aria-label="Sit Happens highlights"
+          >
+            <button class="home-tabs__item is-active" type="button">
+              <span class="home-tabs__title">Routine-first care</span>
+              <span class="home-tabs__text"
+                >We keep feeding, walking, and nap schedules consistent so dogs
+                stay settled.</span
+              >
+            </button>
+
+            <button class="home-tabs__item" type="button">
+              <span class="home-tabs__title">Updates you’ll actually like</span>
+              <span class="home-tabs__text"
+                >We provide a photo and short note after sits and walks, so
+                you’re never guessing.</span
+              >
+            </button>
+
+            <button class="home-tabs__item" type="button">
+              <span class="home-tabs__title">Flexible bookings</span>
+              <span class="home-tabs__text"
+                >One-offs, regular weekly walks, or holiday cover. We fit around
+                you.</span
+              >
+            </button>
+
+            <button class="home-tabs__item" type="button">
+              <span class="home-tabs__title">Local Brighton routes</span>
+              <span class="home-tabs__text"
+                >We know the calm loops, the good sniffing spots, and the muddy
+                surprises.</span
+              >
+            </button>
+          </div>
+        </div>
       </section>
 
-      <!-- SERVICES PREVIEW SECTION -->
-      <section>
-        <!-- SERVICE 1 -->
-        <!-- SERVICE 2 -->
-        <!-- SERVICE 3 -->
+      <!-- HOME SERVICES SECTION -->
+      <section class="section home-services">
+        <div class="container">
+          <h2 class="home-services__title">What We Offer</h2>
+
+          <ul class="home-services__grid" data-home-services>
+            <li class="home-services__item">
+              <div class="home-services__icon" aria-hidden="true">🐾</div>
+              <h3 class="home-services__heading">Dog-first handling</h3>
+              <p class="home-services__text">
+                Calm, patient, reward-based approach.
+              </p>
+            </li>
+
+            <li class="home-services__item">
+              <div class="home-services__icon" aria-hidden="true">📍</div>
+              <h3 class="home-services__heading">Brighton based</h3>
+              <p class="home-services__text">
+                Sits and walks around Brighton & Hove.
+              </p>
+            </li>
+
+            <li class="home-services__item">
+              <div class="home-services__icon" aria-hidden="true">📸</div>
+              <h3 class="home-services__heading">Photo updates</h3>
+              <p class="home-services__text">
+                You’ll get proof they’re thriving.
+              </p>
+            </li>
+
+            <li class="home-services__item home-services__item--more">
+              <div class="home-services__icon" aria-hidden="true">🧠</div>
+              <h3 class="home-services__heading">Enrichment matters</h3>
+              <p class="home-services__text">
+                Sniff time is exercise. Science agrees.
+              </p>
+            </li>
+
+            <li class="home-services__item home-services__item--more">
+              <div class="home-services__icon" aria-hidden="true">🧼</div>
+              <h3 class="home-services__heading">Clean + respectful</h3>
+              <p class="home-services__text">
+                Towels by the door. Mud contained.
+              </p>
+            </li>
+
+            <li class="home-services__item home-services__item--more">
+              <div class="home-services__icon" aria-hidden="true">🦴</div>
+              <h3 class="home-services__heading">Tailored walks</h3>
+              <p class="home-services__text">
+                Energy level, pace, and preferences included.
+              </p>
+            </li>
+          </ul>
+
+          <div class="home-services__actions">
+            <button
+              class="home-services__toggle"
+              type="button"
+              data-home-services-toggle
+            >
+              View more
+            </button>
+          </div>
+        </div>
       </section>
 
-      <!-- TESTIMONIALS SECTION -->
-      <section>
-        <!-- REVIEW 1 -->
-        <!-- REVIEW 2 -->
+      <!-- “SOMETHING IMPORTANT” CTA SECTION -->
+      <section class="section home-cta">
+        <div class="container home-cta__inner">
+          <div class="home-cta__content">
+            <h2 class="home-cta__title">Something important</h2>
+            <p class="home-cta__text">SOMETHING IMPORTANT</p>
+            <a class="btn home-cta__button" href="services.html">Get started</a>
+          </div>
+
+          <div class="home-cta__media" aria-label="Dog image">
+            <img
+              class="home-cta__image"
+              src="public/dogs/dog3.webp"
+              alt="Dog close-up"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials" aria-label="Customer testimonials">
+        <div class="container">
+          <h2 class="testimonials__title">What people think about us</h2>
+
+          <div class="testimonials__people" data-testimonials>
+            <span class="testimonials__indicator" aria-hidden="true"></span>
+
+            <button
+              class="person is-active"
+              type="button"
+              data-quote="'We got photo updates, the walk was spot-on, and our dog slept for hours.'"
+            >
+              <div class="person__avatar" aria-hidden="true">D</div>
+              <div class="person__meta">
+                <p class="person__name">Dave</p>
+                <p class="person__desc">Regular walker</p>
+              </div>
+            </button>
+
+            <button
+              class="person"
+              type="button"
+              data-quote="'Super reliable and exactly the routine we asked for. Zero stress.'"
+            >
+              <div class="person__avatar" aria-hidden="true">G</div>
+              <div class="person__meta">
+                <p class="person__name">Geoffrey</p>
+                <p class="person__desc">Holiday sitter</p>
+              </div>
+            </button>
+
+            <button
+              class="person"
+              type="button"
+              data-quote="'Calm, kind handling and even our anxious dog was happy.'"
+            >
+              <div class="person__avatar" aria-hidden="true">P</div>
+              <div class="person__meta">
+                <p class="person__name">Princess Beatrice</p>
+                <p class="person__desc">Puppy drop-ins</p>
+              </div>
+            </button>
+          </div>
+
+          <p class="testimonials__quote" data-quote-output>
+            'We got photo updates, the walk was spot-on, and our dog slept for
+            hours.'
+          </p>
+        </div>
       </section>
     </main>
 
-    <!-- FOOTER SECTION -->
-    <footer>
-      <!-- SOCIAL LINKS -->
-      <!-- LEGAL LINKS -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <!-- Top section -->
+        <div class="footer__links">
+          <div class="footer__column footer__column--company">
+            <h3 class="footer__heading">Company</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Services</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Dog Gallery</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column footer__column--legal">
+            <h3 class="footer__heading">Legal</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Cookies Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom section -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 All rights reserved</p>
+
+        <div class="footer__socials">
+          <a href="#" class="footer__social" aria-label="Instagram">
+            <svg aria-hidden="true">
+              <use href="public/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="footer__social" aria-label="Dribbble">
+            <svg aria-hidden="true">
+              <use href="public/icons.svg#icon-dribbble"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="footer__social" aria-label="X (Twitter)">
+            <svg aria-hidden="true">
+              <use href="public/icons.svg#icon-x"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="footer__social" aria-label="YouTube">
+            <svg aria-hidden="true">
+              <use href="public/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

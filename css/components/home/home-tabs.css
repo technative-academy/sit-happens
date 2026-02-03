@@ -1,0 +1,115 @@
+.home-tabs__inner {
+  display: grid;
+  gap: var(--spacing-lg);
+  justify-items: center;
+}
+
+/* image card */
+.home-tabs__media {
+  margin: 0;
+  width: 100%;
+  max-width: 720px;
+  display: grid;
+  gap: var(--spacing-sm);
+  justify-items: center;
+}
+
+.home-tabs__image-frame {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  border-radius: 2rem;
+  background: var(--color-grey-light);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.home-tabs__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-tabs__caption {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  opacity: 0.75;
+  text-align: center;
+}
+
+/* tabs list */
+.home-tabs__tabs {
+  width: 100%;
+  max-width: 720px;
+  display: grid;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: var(--shadow-sm);
+}
+
+/* each tab */
+.home-tabs__item {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  padding: 1.1rem 1.25rem;
+  cursor: pointer;
+
+  display: grid;
+  gap: 0.25rem;
+
+  border-left: 4px solid transparent;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.home-tabs__item + .home-tabs__item {
+  border-top: 1px solid rgba(36, 54, 75, 0.08);
+}
+
+.home-tabs__title {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-heading);
+}
+
+.home-tabs__text {
+  color: var(--color-text);
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+.home-tabs__item.is-active {
+  background: rgba(255, 255, 255, 0.6);
+  border-left-color: #6f6af8;
+}
+
+.home-tabs__item:focus-visible {
+  outline: 3px solid rgba(208, 122, 36, 0.35);
+  outline-offset: 3px;
+  border-radius: 0.75rem;
+}
+
+@media (min-width: 900px) {
+  .home-tabs__inner {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    justify-items: stretch;
+  }
+
+  .home-tabs__media {
+    max-width: none;
+  }
+
+  .home-tabs__tabs {
+    max-width: none;
+  }
+
+  .home-tabs__caption {
+    text-align: left;
+    justify-self: start;
+  }
+}

@@ -1,0 +1,139 @@
+.testimonials__title {
+  text-align: center;
+  margin: 0 0 var(--spacing-md);
+  color: var(--color-heading);
+}
+
+.testimonials__quote {
+  text-align: center;
+  margin: var(--spacing-lg) auto 0;
+  max-width: 70ch;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  opacity: 0.85;
+
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+  will-change: opacity, transform;
+}
+
+.testimonials__quote.is-changing {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.testimonials__people {
+  margin-top: calc(var(--spacing-lg) + var(--spacing-md));
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+  position: relative;
+
+  padding-bottom: 1.25rem;
+}
+
+.testimonials__indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 0.25rem;
+  width: 90px;
+  height: 4px;
+  background: var(--color-primary);
+  transform: translateX(-50%);
+  border-radius: 999px;
+
+  transition:
+    left 320ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    width 320ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: left, width;
+}
+
+.person {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  min-width: 110px;
+  opacity: 0.85;
+
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+
+  cursor: pointer;
+
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
+}
+
+.person:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.person.is-active {
+  opacity: 1;
+}
+
+.person:focus-visible {
+  outline: 3px solid rgba(208, 122, 36, 0.35);
+  outline-offset: 6px;
+  border-radius: 0.75rem;
+}
+
+.person__avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: var(--font-weight-semibold);
+  background: #f6efe7;
+  color: var(--color-primary-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.person__meta {
+  text-align: center;
+}
+
+.person__name {
+  margin: 0;
+  font-weight: var(--font-weight-semibold);
+}
+
+.person__desc {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+@media (min-width: 900px) {
+  .testimonials__people {
+    justify-content: center;
+  }
+
+  .testimonials__indicator {
+    transform: translateX(-50%);
+  }
+
+  .testimonials__quote {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    padding-bottom: 1.8rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonials__indicator,
+  .testimonials__quote,
+  .person {
+    transition: none;
+  }
+}
