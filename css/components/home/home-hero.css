@@ -10,16 +10,20 @@
 }
 
 .home-hero__title {
-  font-weight: var(--font-weight-semibold);
-  margin: 0;
-  letter-spacing: -0.02em;
-  color: var(--color-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .home-hero__title {
+    font-size: 56px;
+  }
 }
 
 .home-hero__tagline {
   margin: var(--spacing-sm) 0 0;
-  font-size: 1rem;
-  line-height: 1.5;
   color: var(--color-text);
   opacity: 0.85;
 }
@@ -78,4 +82,3 @@
     gap: calc(var(--spacing-lg) + var(--spacing-md));
   }
 }
-

@@ -9,8 +9,8 @@ body {
   background: var(--color-bg);
   font-family: var(--font-base);
   font-weight: var(--font-weight-regular);
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 26px;
   color: var(--color-text);
   -webkit-text-size-adjust: 100%;
 }
@@ -65,8 +65,8 @@ img {
   }
 
   h2 {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   h3 {
