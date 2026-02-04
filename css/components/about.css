@@ -41,10 +41,12 @@ main > .about:first-of-type {
 }
 
 main > .about:first-of-type h2 {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 16px;
   line-height: 1.2;
+  padding-top: 1rem;
+
 }
 
 main > .about:first-of-type p {
@@ -260,5 +262,30 @@ main > .two-col-wrapper .about p {
 
   .contact-section__title {
     font-size: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  main > .two-col-wrapper .about h2,
+  main > .contact-section .contact-section__title {
+    font-size: 24px !important;
+  }
+
+  .contact-section__title,
+  .contact-section__subtitle {
+    text-align: left;
+  }
+
+  .contact-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-box {
+    order: 1;
+  }
+
+  .map-wrapper {
+    order: 2;
   }
 }
