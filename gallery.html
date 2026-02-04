@@ -8,74 +8,60 @@
 
     <link rel="stylesheet" href="./css/site.css" />
     <script defer src="gallery.js"></script>
-    <script defer src="header.js"></script>
   </head>
 
   <body>
-    <!-- HEADER SECTION -->
+    <!-- ================= HEADER ================= -->
     <header class="site-header">
-      <!-- LOGO -->
-
+      <!-- Brand -->
       <div class="site-header__brand">
         <div class="text" aria-label="Sit Happens">
           <span class="text__sit">Sit</span>
-          <span class="text__happens"
-            >Happens<span class="text__dot">.</span></span
-          >
+          <span class="text__happens">
+            Happens<span class="text__dot">.</span>
+          </span>
         </div>
+
         <img
           class="image__dog"
-          src="/public/dog.png"
-          alt="Sit Happens dog logo"
+          src="public/dog.png"
+          alt="Sit Happens dog mascot"
         />
       </div>
 
-      <!-- HAMBURGER MENU BUTTON -->
-      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span class="hamburger__text">Menu</span>
-        <span class="hamburger__lines">
-          <span class="hamburger__line"></span>
-          <span class="hamburger__line"></span>
-          <span class="hamburger__line"></span>
-        </span>
-      </button>
-
-      <!-- NAVIGATION LINKS -->
-      <nav class="site-nav">
+      <!-- Navigation -->
+      <nav class="site-nav" aria-label="Primary navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html" class="is-active">Gallery</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
         </ul>
       </nav>
 
-      <h1>Gallery</h1>
+      <h1 class="page__title">Gallery</h1>
     </header>
 
     <!-- ================= MAIN ================= -->
     <main>
-      <section class="dogs">
-        <h2 class="subheading">Find your favourite dog</h2>
+      <div class="container">
+        <section class="dogs">
+          <h2 class="subheading">Find your favourite dog</h2>
 
-        <!-- Search -->
-        <div class="controls">
-          <input
-            type="search"
-            class="search-input"
-            placeholder="Search dogs"
-            aria-label="Search dogs"
-          />
-        </div>
+          <!-- Search -->
+          <div class="controls">
+            <select class="breeds"></select>
+          </div>
 
-        <!-- Dog cards -->
-        <div id="dogGrid" class="card-grid"></div>
+          <!-- Dog cards -->
+          <div id="dogGrid" class="card-grid"></div>
 
-        <!-- Load more -->
-        <div class="controls">
-          <button class="btn" id="showMoreBtn">More Dogs Please!</button>
-        </div>
-      </section>
+          <!-- Load more -->
+          <div class="controls">
+            <button class="btn" id="showMoreBtn">More Dogs Please!</button>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- ================= FOOTER ================= -->
