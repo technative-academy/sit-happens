@@ -48,6 +48,14 @@ img {
   display: block;
 }
 
+.page__title {
+  font-size: 40px;
+}
+
+.subheading {
+  font-size: 30px;
+}
+
 .container {
   width: min(var(--container-width), calc(100% - 2rem));
   margin-inline: auto;

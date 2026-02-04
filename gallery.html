@@ -39,32 +39,29 @@
         </ul>
       </nav>
 
-      <h1>Gallery</h1>
+      <h1 class="page__title">Gallery</h1>
     </header>
 
     <!-- ================= MAIN ================= -->
     <main>
-      <section class="dogs">
-        <h2 class="subheading">Find your favourite dog</h2>
+      <div class="container">
+        <section class="dogs">
+          <h2 class="subheading">Find your favourite dog</h2>
 
-        <!-- Search -->
-        <div class="controls">
-          <input
-            type="search"
-            class="search-input"
-            placeholder="Search dogs"
-            aria-label="Search dogs"
-          />
-        </div>
+          <!-- Search -->
+          <div class="controls">
+            <select class="breeds"></select>
+          </div>
 
-        <!-- Dog cards -->
-        <div id="dogGrid" class="card-grid"></div>
+          <!-- Dog cards -->
+          <div id="dogGrid" class="card-grid"></div>
 
-        <!-- Load more -->
-        <div class="controls">
-          <button class="btn" id="showMoreBtn">More Dogs Please!</button>
-        </div>
-      </section>
+          <!-- Load more -->
+          <div class="controls">
+            <button class="btn" id="showMoreBtn">More Dogs Please!</button>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- ================= FOOTER ================= -->
