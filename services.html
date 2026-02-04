@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./css/site.css" />
-    <script src="./header.js" defer></script>
     <title>Sit Happens - Services</title>
   </head>
   <body>
     <!-- HEADER SECTION -->
     <header class="site-header">
       <!-- LOGO -->
-
       <div class="site-header__brand">
         <div class="text" aria-label="Sit Happens">
           <span class="text__sit">Sit</span>
@@ -22,211 +20,202 @@
         </div>
         <img
           class="image__dog"
-          src="/public/dog.png"
-          alt="Sit Happens dog logo"
+          src="public/dog.png"
+          alt="Sit Happens dog mascot"
         />
       </div>
-
-      <!-- HAMBURGER MENU BUTTON -->
-      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span class="hamburger__text">Menu</span>
-        <span class="hamburger__lines">
-          <span class="hamburger__line"></span>
-          <span class="hamburger__line"></span>
-          <span class="hamburger__line"></span>
-        </span>
-      </button>
-
       <!-- NAVIGATION LINKS -->
       <nav class="site-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html" class="is-active">Services</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
-      <h1>Services</h1>
+      <h1 class="page__title">Services</h1>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
-      <section class="services">
-        <h2 class="subheading">We offer the following services</h2>
+      <div class="container">
+        <section class="services">
+          <h2 class="subheading">We offer the following services</h2>
 
-        <div class="services__grid">
-          <!-- Card 1 -->
-          <article class="card service-card">
-            <img
-              src="public/dog-sitting.jpg"
-              alt="Dog sitting service"
-              class="card__image"
-            />
+          <div class="services__grid">
+            <!-- Card 1 -->
+            <article class="card--subtle service-card">
+              <img
+                src="public/dogs/dog15.webp"
+                alt="Dog sitting service"
+                class="card__image"
+              />
 
-            <div class="card__info">
-              <h3 class="card__title">Dog Sitting</h3>
-              <p class="card__description">
-                Your dog is cared for in a calm, safe, and loving environment
-                where their routine comes first. Whether it’s a day, overnight,
-                or longer stay, I provide attentive, home-style care with plenty
-                of walks, play, and affection.
-              </p>
-            </div>
-          </article>
+              <div class="card__info">
+                <h3 class="card__title">Dog Sitting</h3>
+                <p class="card__description">
+                  Your dog is cared for in a calm, safe, and loving environment
+                  where their routine comes first. Whether it’s a day,
+                  overnight, or longer stay, I provide attentive, home-style
+                  care with plenty of walks, play, and affection.
+                </p>
+              </div>
+            </article>
 
-          <!-- Card 2 -->
-          <article class="card service-card">
-            <img
-              src="public/dog-house-sitting.jpg"
-              alt="Dog and house sitting service"
-              class="card__image"
-            />
+            <!-- Card 2 -->
+            <article class="card--subtle service-card">
+              <img
+                src="public/dogs/dog16.webp"
+                alt="Dog and house sitting service"
+                class="card__image"
+              />
 
-            <div class="card__info">
-              <h3 class="card__title">Dog &amp; House Sitting</h3>
-              <p class="card__description">
-                Enjoy peace of mind knowing your home and dog are both well
-                looked after while you’re away. I stay in your home to maintain
-                your dog’s normal routine, keep your property secure, and ensure
-                everything runs smoothly.
-              </p>
-            </div>
-          </article>
+              <div class="card__info">
+                <h3 class="card__title">Dog &amp; House Sitting</h3>
+                <p class="card__description">
+                  Enjoy peace of mind knowing your home and dog are both well
+                  looked after while you’re away. I stay in your home to
+                  maintain your dog’s normal routine, keep your property secure,
+                  and ensure everything runs smoothly.
+                </p>
+              </div>
+            </article>
 
-          <!-- Card 3 -->
-          <article class="card service-card">
-            <img
-              src="public/dog-walking.jpg"
-              alt="Dog walking service"
-              class="card__image"
-            />
+            <!-- Card 3 -->
+            <article class="card--subtle service-card">
+              <img
+                src="public/dogs/dog17.webp"
+                alt="Dog walking service"
+                class="card__image"
+              />
 
-            <div class="card__info">
-              <h3 class="card__title">Dog Walking</h3>
-              <p class="card__description">
-                Regular, stimulating walks tailored to your dog’s energy level
-                and needs, providing exercise, mental stimulation, and
-                socialisation to keep your dog happy and healthy.
-              </p>
-            </div>
-          </article>
+              <div class="card__info">
+                <h3 class="card__title">Dog Walking</h3>
+                <p class="card__description">
+                  Regular, stimulating walks tailored to your dog’s energy level
+                  and needs, providing exercise, mental stimulation, and
+                  socialisation to keep your dog happy and healthy.
+                </p>
+              </div>
+            </article>
 
-          <!-- Card 4 -->
-          <article class="card service-card">
-            <img
-              src="public/dog-grooming.jpg"
-              alt="Dog grooming service"
-              class="card__image"
-            />
+            <!-- Card 4 -->
+            <article class="card--subtle service-card">
+              <img
+                src="public/dogs/dog18.webp"
+                alt="Dog grooming service"
+                class="card__image"
+              />
 
-            <div class="card__info">
-              <h3 class="card__title">Dog Grooming</h3>
-              <p class="card__description">
-                Gentle grooming services to keep your dog clean, comfortable,
-                and looking their best. Each session is handled patiently and
-                calmly, especially for nervous or sensitive dogs.
-              </p>
-            </div>
-          </article>
+              <div class="card__info">
+                <h3 class="card__title">Dog Grooming</h3>
+                <p class="card__description">
+                  Gentle grooming services to keep your dog clean, comfortable,
+                  and looking their best. Each session is handled patiently and
+                  calmly, especially for nervous or sensitive dogs.
+                </p>
+              </div>
+            </article>
 
-          <!-- Card 5 -->
-          <article class="card service-card">
-            <img
-              src="public/dog-holiday.jpg"
-              alt="Dog friendly holiday service"
-              class="card__image"
-            />
+            <!-- Card 5 -->
+            <article class="card--subtle service-card">
+              <img
+                src="public/dogs/dog19.webp"
+                alt="Dog friendly holiday service"
+                class="card__image"
+              />
 
-            <div class="card__info">
-              <h3 class="card__title">Dog Friendly Holidays</h3>
-              <p class="card__description">
-                A relaxed, enrichment-focused stay with lots of outdoor time,
-                exercise, and social interaction — creating a holiday experience
-                your dog will love.
-              </p>
-            </div>
-          </article>
+              <div class="card__info">
+                <h3 class="card__title">Dog Friendly Holidays</h3>
+                <p class="card__description">
+                  A relaxed, enrichment-focused stay with lots of outdoor time,
+                  exercise, and social interaction — creating a holiday
+                  experience your dog will love.
+                </p>
+              </div>
+            </article>
 
-          <!-- Card 6 -->
-          <article class="card service-card">
-            <img
-              src="public/dog-training.jpg"
-              alt="Dog training service"
-              class="card__image"
-            />
+            <!-- Card 6 -->
+            <article class="card--subtle service-card">
+              <img
+                src="public/dogs/dog20.webp"
+                alt="Dog training service"
+                class="card__image"
+              />
 
-            <div class="card__info">
-              <h3 class="card__title">Dog Training</h3>
-              <p class="card__description">
-                Positive, reward-based training tailored to your dog’s
-                personality and your goals, building confidence, trust, and
-                long-lasting results.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- PRICING INFORMATION (OPTIONAL) -->
-      <section>
-        <section class="pricing">
-          <h2 class="pricing__title">Dog Services Pricing</h2>
-
-          <table class="pricing-table">
-            <thead class="pricing-table__head">
-              <tr class="pricing-table__row">
-                <th class="pricing-table__header">Service</th>
-                <th class="pricing-table__header">Duration</th>
-                <th class="pricing-table__header">Price</th>
-              </tr>
-            </thead>
-
-            <tbody class="pricing-table__body">
-              <tr class="pricing-table__row">
-                <td class="pricing-table__cell">Dog Sitting</td>
-                <td class="pricing-table__cell">Per Hour</td>
-                <td class="pricing-table__cell">£10 – £30</td>
-              </tr>
-
-              <tr class="pricing-table__row">
-                <td class="pricing-table__cell">Dog Walking</td>
-                <td class="pricing-table__cell">30- 60 mins</td>
-                <td class="pricing-table__cell">£15 – £30</td>
-              </tr>
-
-              <tr class="pricing-table__row">
-                <td class="pricing-table__cell">Dog Grooming</td>
-                <td class="pricing-table__cell">Full groom</td>
-                <td class="pricing-table__cell">£40 – £95</td>
-              </tr>
-
-              <tr class="pricing-table__row">
-                <td class="pricing-table__cell">Dog Training</td>
-                <td class="pricing-table__cell">Per hour</td>
-                <td class="pricing-table__cell">£10 – £30</td>
-              </tr>
-
-              <tr class="pricing-table__row">
-                <td class="pricing-table__cell">Dog Boarding</td>
-                <td class="pricing-table__cell">Overnight</td>
-                <td class="pricing-table__cell">£25 – £35</td>
-              </tr>
-
-              <tr class="pricing-table__row">
-                <td class="pricing-table__cell">House and Dog Sitting</td>
-                <td class="pricing-table__cell">Overnight</td>
-                <td class="pricing-table__cell">£25 – £35</td>
-              </tr>
-
-              <tr class="pricing-table__row">
-                <td class="pricing-table__cell">Dog Friendly Holidays</td>
-                <td class="pricing-table__cell">2-7 Nights</td>
-                <td class="pricing-table__cell">Contact us for a quote</td>
-              </tr>
-            </tbody>
-          </table>
+              <div class="card__info">
+                <h3 class="card__title">Dog Training</h3>
+                <p class="card__description">
+                  Positive, reward-based training tailored to your dog’s
+                  personality and your goals, building confidence, trust, and
+                  long-lasting results.
+                </p>
+              </div>
+            </article>
+          </div>
         </section>
-      </section>
+
+        <!-- PRICING INFORMATION (OPTIONAL) -->
+        <section>
+          <section class="pricing">
+            <h2 class="subheading">Dog Services Pricing</h2>
+
+            <table class="pricing-table">
+              <thead class="pricing-table__head">
+                <tr class="pricing-table__row">
+                  <th class="pricing-table__header">Service</th>
+                  <th class="pricing-table__header">Duration</th>
+                  <th class="pricing-table__header">Price</th>
+                </tr>
+              </thead>
+
+              <tbody class="pricing-table__body">
+                <tr class="pricing-table__row">
+                  <td class="pricing-table__cell">Dog Sitting</td>
+                  <td class="pricing-table__cell">Per Hour</td>
+                  <td class="pricing-table__cell">£10 – £30</td>
+                </tr>
+
+                <tr class="pricing-table__row">
+                  <td class="pricing-table__cell">Dog Walking</td>
+                  <td class="pricing-table__cell">30- 60 mins</td>
+                  <td class="pricing-table__cell">£15 – £30</td>
+                </tr>
+
+                <tr class="pricing-table__row">
+                  <td class="pricing-table__cell">Dog Grooming</td>
+                  <td class="pricing-table__cell">Full groom</td>
+                  <td class="pricing-table__cell">£40 – £95</td>
+                </tr>
+
+                <tr class="pricing-table__row">
+                  <td class="pricing-table__cell">Dog Training</td>
+                  <td class="pricing-table__cell">Per hour</td>
+                  <td class="pricing-table__cell">£10 – £30</td>
+                </tr>
+
+                <tr class="pricing-table__row">
+                  <td class="pricing-table__cell">Dog Boarding</td>
+                  <td class="pricing-table__cell">Overnight</td>
+                  <td class="pricing-table__cell">£25 – £35</td>
+                </tr>
+
+                <tr class="pricing-table__row">
+                  <td class="pricing-table__cell">House and Dog Sitting</td>
+                  <td class="pricing-table__cell">Overnight</td>
+                  <td class="pricing-table__cell">£25 – £35</td>
+                </tr>
+
+                <tr class="pricing-table__row">
+                  <td class="pricing-table__cell">Dog Friendly Holidays</td>
+                  <td class="pricing-table__cell">2-7 Nights</td>
+                  <td class="pricing-table__cell">Contact us for a quote</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+      </div>
     </main>
 
     <!-- ================= FOOTER ================= -->

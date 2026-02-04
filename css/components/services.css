@@ -1,4 +1,15 @@
+/*main {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-base);
+  padding: 2rem;
+}
 
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+}*/
 
 .services__grid {
   display: grid;
@@ -33,6 +44,7 @@
 .pricing-table {
   width: 100%;
   border-collapse: collapse; /* important */
+  margin-top: 10px;
 }
 
 /* Header cells */
