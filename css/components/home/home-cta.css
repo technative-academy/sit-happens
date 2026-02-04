@@ -1,3 +1,8 @@
+/* full-width contrast band background */
+.home-cta {
+  background: var(--color-contrast-band);
+}
+
 .home-cta__inner {
   display: grid;
   gap: var(--spacing-lg);
@@ -30,6 +35,12 @@
   margin-top: var(--spacing-sm);
 }
 
+@media (max-width: 767px) {
+  .home-cta__button {
+    width: 100%;
+  }
+}
+
 .home-cta__media {
   width: min(520px, 100%);
   aspect-ratio: 16 / 12;
@@ -50,6 +61,7 @@
 @media (min-width: 900px) {
   .home-cta__inner {
     grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
     justify-items: stretch;
     text-align: left;
   }
@@ -57,6 +69,7 @@
   .home-cta__content {
     justify-items: start;
     text-align: left;
+    max-width: none;
   }
 
   .home-cta__title {
