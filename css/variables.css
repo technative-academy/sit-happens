@@ -2,18 +2,18 @@
   /* colours */
   --color-primary: #d07a24;
   --color-primary-dark: #1d2830;
-  --color-bg: #fbf7f5;
+  --color-bg: #ffffff;
   --color-text: #4e5a65;
   --color-heading: #35414b;
   --color-text-light: #b9c5d6;
   --color-white: #ffffff;
   --color-grey-light: #e2e8f0;
-
+  --color-contact-band: #fbfafe;
 
   --font-base: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
-  --font-bold: 700; 
+  --font-bold: 700;
 
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;

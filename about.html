@@ -17,12 +17,17 @@
 
     <!-- Scripts -->
     <script src="./about.js" defer></script>
-    <script src="./home.js" defer></script>
+    <script src="./header.js" defer></script>
 
     <title>Sit Happens</title>
   </head>
 
-  <body>
+  <body class="about-page">
+    <div class="about-hero-bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none" focusable="false">
+        <path d="M0,0 H1440 V210 C1060,295 380,295 0,210 Z" fill="#fbfafe" />
+      </svg>
+    </div>
     <!-- HEADER SECTION -->
     <header class="site-header">
       <!-- LOGO -->
@@ -43,9 +48,12 @@
 
       <!-- HAMBURGER MENU BUTTON -->
       <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span class="hamburger__line"></span>
-        <span class="hamburger__line"></span>
-        <span class="hamburger__line"></span>
+        <span class="hamburger__text">Menu</span>
+        <span class="hamburger__lines">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </span>
       </button>
 
       <!-- NAVIGATION LINKS -->
@@ -64,93 +72,95 @@
       <!-- About -->
       <section class="about">
         <h2>About Us</h2>
-        <p>
-          We are a Brighton-based dogsitting and walking service. We offer a
-          variety of walks covering a variety of walks by the seaside, woodland
-          and local parks. We know socialisation and exercise are important to
-          your dog so we provide varied walks to keep your dog active, happy and
-          healthy. We pride ourselves on our reliability, genuine care for your
-          four-legged friends and our full range of dog walking services. These
-          dog services include our 1 hr walks, weekend walks (for pet sittings),
-          pet friendly taxi services, taxi service for vet appointments, pet
-          feeding and our famous Friday Mega Hike. We promise to bring your pet
-          home safe, tired and above all happy in our pet friendly vehicles. Get
-          in touch now to see how our dog walking company can meet your animal
-          needs.
-        </p>
+        <p>We are a Brighton-based dogsitting and walking service.</p>
       </section>
 
-      <!-- Who We Are -->
-      <section class="about">
-        <h2>Who We Are</h2>
-        <p>
-          Sit Happens was formed in January 2026 by three software developers,
-          Emma, Alex and Kristy for the Digital Technative Bootcamp. Their love
-          of dogs inpired them to produce a website for a dog walking and
-          sitting service. Our full range of services include dog walking, dog
-          and house sitting, dog grooming, dog-friendly holidays, dog spa and
-          dog training. Every member of out team is fully insured and trained in
-          the service they provide. Please give us a call or get in touch
-          through the "Contact Us" box below and we will get back to you.
-        </p>
-      </section>
+      <!-- Who We Are + Image Section -->
+      <div class="two-col-wrapper">
+        <section class="about">
+          <h2>We are great. Really great.</h2>
+          <p>
+            We offer a variety of walks covering a variety of walks by the
+            seaside, woodland and local parks. We know socialisation and
+            exercise are important to your dog so we provide varied walks to
+            keep your dog active, happy and healthy.
+          </p>
+          <p>
+            We pride ourselves on our reliability, genuine care for your
+            four-legged friends and our full range of dog walking services.
+            These dog services include our 1 hr walks, weekend walks (for pet
+            sittings), pet friendly taxi services, taxi service for vet
+            appointments, pet feeding and our famous Friday Mega Hike. We
+            promise to bring your pet home safe, tired and above all happy in
+            our pet friendly vehicles. Get in touch now to see how our dog
+            walking company can meet your animal needs.
+          </p>
+        </section>
 
-      <!-- Image -->
-      <section class="card">
-        <img
-          src="./images/dog-walking-photo.jpg"
-          alt="Dogs on a walk"
-          class="card__image"
-        />
-      </section>
+        <section class="about-image-section">
+          <img
+            src="./public/dogs/dog8.webp"
+            alt="Dogs on a walk"
+            class="about-image"
+          />
+        </section>
+      </div>
 
-      <!-- Map -->
-      <section class="card card--white">
-        <h2 class="card__title">Map</h2>
-        <p class="card__text">
-          This is the area we cover. Please contact us to confirm availability
-          in your area.
+      <!-- Contact Us Section -->
+      <section class="contact-section">
+        <h2 class="contact-section__title">Contact us</h2>
+        <p class="contact-section__subtitle">
+          Email us at
+          <a href="mailto:info@sithappens.com">info@sithappens.com</a> or enter
+          your message below:
         </p>
 
-        <iframe
-          title="Google Map of Brighton"
-          src="https://maps.google.com/maps?q=Brighton,UK&z=14&output=embed"
-          loading="lazy"
-        ></iframe>
-      </section>
+        <div class="contact-grid">
+          <!-- Map -->
+          <div class="map-wrapper">
+            <iframe
+              title="Google Map of Brighton"
+              src="https://maps.google.com/maps?q=Brighton,UK&z=14&output=embed"
+              loading="lazy"
+            ></iframe>
+            <div class="address">
+              <p><strong>Our address:</strong></p>
+              <p>58 Eden Street</p>
+              <p>Brighton</p>
+              <p>BN1 5AP</p>
+            </div>
+          </div>
 
-      <!-- Call to action -->
-      <section class="contact">
-        <p>
-          Please contact us using the form below to get prices for the service
-          you require.
-        </p>
-        <p><strong>Telephone:</strong> 01273 370284</p>
-      </section>
+          <!-- Contact Form -->
+          <div class="contact-box">
+            <form id="contactForm">
+              <label>
+                Name
+                <input type="text" id="name" placeholder="Your name" required />
+              </label>
 
-      <!-- Contact form -->
-      <section class="contact">
-        <div class="contact-box">
-          <h2>Contact Us</h2>
+              <label>
+                Email
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </label>
 
-          <form id="contactForm">
-            <label>
-              Name
-              <input type="text" id="name" required />
-            </label>
+              <label>
+                Message
+                <textarea
+                  id="message"
+                  placeholder="Write your message here"
+                  required
+                ></textarea>
+              </label>
 
-            <label>
-              Email
-              <input type="email" id="email" required />
-            </label>
-
-            <label>
-              Message
-              <textarea id="message" required></textarea>
-            </label>
-
-            <button type="submit">Send</button>
-          </form>
+              <button type="submit">Send</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
