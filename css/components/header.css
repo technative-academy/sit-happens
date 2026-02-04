@@ -155,6 +155,10 @@
   background-color: #f6efe7;
 }
 
+.site-nav a.is-active {
+  color: #d07a24;
+}
+
 @media (min-width: 768px) {
   .site-header {
     padding-top: var(--spacing-lg);

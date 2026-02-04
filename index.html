@@ -11,6 +11,8 @@
     />
     <link rel="stylesheet" href="./css/site.css" />
     <script src="./header.js"></script>
+    <script src="./home-tabs.js"></script>
+    <script src="./home-services.js"></script>
     <title>Sit Happens</title>
   </head>
   <body>
@@ -45,7 +47,7 @@
       <!-- NAVIGATION LINKS -->
       <nav class="site-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="is-active">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="gallery.html">Gallery</a></li>
@@ -106,7 +108,11 @@
             data-home-tabs
             aria-label="Sit Happens highlights"
           >
-            <button class="home-tabs__item is-active" type="button">
+            <button
+              class="home-tabs__item is-active"
+              type="button"
+              data-image="public/dogs/dog5.webp"
+            >
               <span class="home-tabs__title">Routine-first care</span>
               <span class="home-tabs__text"
                 >We keep feeding, walking, and nap schedules consistent so dogs
@@ -114,7 +120,11 @@
               >
             </button>
 
-            <button class="home-tabs__item" type="button">
+            <button
+              class="home-tabs__item"
+              type="button"
+              data-image="public/dogs/dog14.webp"
+            >
               <span class="home-tabs__title">Updates you’ll actually like</span>
               <span class="home-tabs__text"
                 >We provide a photo and short note after sits and walks, so
@@ -122,7 +132,11 @@
               >
             </button>
 
-            <button class="home-tabs__item" type="button">
+            <button
+              class="home-tabs__item"
+              type="button"
+              data-image="public/dogs/dog11.webp"
+            >
               <span class="home-tabs__title">Flexible bookings</span>
               <span class="home-tabs__text"
                 >One-offs, regular weekly walks, or holiday cover. We fit around
@@ -130,7 +144,11 @@
               >
             </button>
 
-            <button class="home-tabs__item" type="button">
+            <button
+              class="home-tabs__item"
+              type="button"
+              data-image="public/dogs/dog9.webp"
+            >
               <span class="home-tabs__title">Local Brighton routes</span>
               <span class="home-tabs__text"
                 >We know the calm loops, the good sniffing spots, and the muddy
@@ -146,7 +164,11 @@
         <div class="container">
           <h2 class="home-services__title">What We Offer</h2>
 
-          <ul class="home-services__grid" data-home-services>
+          <ul
+            class="home-services__grid"
+            id="home-services-list"
+            data-home-services
+          >
             <li class="home-services__item">
               <div class="home-services__icon" aria-hidden="true">🐾</div>
               <h3 class="home-services__heading">Dog-first handling</h3>
@@ -201,6 +223,8 @@
               class="home-services__toggle"
               type="button"
               data-home-services-toggle
+              aria-expanded="false"
+              aria-controls="home-services-list"
             >
               View more
             </button>
@@ -208,20 +232,26 @@
         </div>
       </section>
 
-      <!-- “SOMETHING IMPORTANT” CTA SECTION -->
+      <!-- "SOMETHING IMPORTANT" CTA SECTION -->
       <section class="section home-cta">
         <div class="container home-cta__inner">
           <div class="home-cta__content">
-            <h2 class="home-cta__title">Something important</h2>
-            <p class="home-cta__text">SOMETHING IMPORTANT</p>
-            <a class="btn home-cta__button" href="services.html">Get started</a>
+            <h2 class="home-cta__title">Fully insured and DBS checked</h2>
+            <p class="home-cta__text">
+              Every member of our team is fully insured, DBS checked, and
+              trained in pet first aid. Your dog's safety and wellbeing is our
+              top priority, so you can relax knowing they're in trusted hands.
+            </p>
+            <a class="btn home-cta__button" href="about.html#contact"
+              >Contact us</a
+            >
           </div>
 
           <div class="home-cta__media" aria-label="Dog image">
             <img
               class="home-cta__image"
               src="public/dogs/dog3.webp"
-              alt="Dog close-up"
+              alt="Happy dog being cared for"
             />
           </div>
         </div>
@@ -231,15 +261,23 @@
         <div class="container">
           <h2 class="testimonials__title">What people think about us</h2>
 
-          <div class="testimonials__people" data-testimonials>
-            <span class="testimonials__indicator" aria-hidden="true"></span>
+          <p class="testimonials__quote" data-quote-output>
+            'We got photo updates, the walk was spot-on, and our dog slept for
+            hours.'
+          </p>
 
+          <div class="testimonials__people" data-testimonials>
             <button
               class="person is-active"
               type="button"
               data-quote="'We got photo updates, the walk was spot-on, and our dog slept for hours.'"
             >
-              <div class="person__avatar" aria-hidden="true">D</div>
+              <span class="person__indicator"></span>
+              <img
+                class="person__avatar"
+                src="public/people/Ellipse 5.webp"
+                alt="Dave"
+              />
               <div class="person__meta">
                 <p class="person__name">Dave</p>
                 <p class="person__desc">Regular walker</p>
@@ -251,7 +289,12 @@
               type="button"
               data-quote="'Super reliable and exactly the routine we asked for. Zero stress.'"
             >
-              <div class="person__avatar" aria-hidden="true">G</div>
+              <span class="person__indicator"></span>
+              <img
+                class="person__avatar"
+                src="public/people/Ellipse 6.webp"
+                alt="Geoffrey"
+              />
               <div class="person__meta">
                 <p class="person__name">Geoffrey</p>
                 <p class="person__desc">Holiday sitter</p>
@@ -263,18 +306,18 @@
               type="button"
               data-quote="'Calm, kind handling and even our anxious dog was happy.'"
             >
-              <div class="person__avatar" aria-hidden="true">P</div>
+              <span class="person__indicator"></span>
+              <img
+                class="person__avatar"
+                src="public/people/Ellipse 7.webp"
+                alt="Princess Beatrice"
+              />
               <div class="person__meta">
-                <p class="person__name">Princess Beatrice</p>
+                <p class="person__name">Beatrice</p>
                 <p class="person__desc">Puppy drop-ins</p>
               </div>
             </button>
           </div>
-
-          <p class="testimonials__quote" data-quote-output>
-            'We got photo updates, the walk was spot-on, and our dog slept for
-            hours.'
-          </p>
         </div>
       </section>
     </main>

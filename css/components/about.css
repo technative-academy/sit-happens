@@ -101,7 +101,7 @@ main > .two-col-wrapper .about p {
 
 .contact-section {
   padding: 60px 24px;
-  background: var(--color-contact-band);
+  background: var(--color-contrast-band);
 
   max-width: none;
   margin: 0;
